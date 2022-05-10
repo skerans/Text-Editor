@@ -8,13 +8,8 @@ window.addEventListener('beforeinstallprompt', (event) => {
 
 
 butInstall.addEventListener('click', async () => {
-  if(deferredPrompt !== null) {
-    deferredPrompt.prompt();
-    // const { outcome } = await deferredPrompt.userChoice;
-    // if (outcome === 'accepted') {
-    //   deferredPrompt = null;
-    // }
-  }
+  deferredPrompt.prompt();
+  
 });
 
 
